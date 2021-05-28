@@ -1,0 +1,63 @@
+@import "assets/sass-mixin/index"
+
+.base-table
+  border-collapse: collapse
+  border-spacing: 0
+  width: 100%
+
+.base-table-thead
+  +d-display-lg(table-header-group)
+  display: none
+
+.base-table-tr-th
+  background-color: #fafafa
+  text-align: left
+
+.base-table-th, .base-table-td
+  border-top: 1px solid #dee2e6
+  +px(10px)
+  +py(8px)
+
+
+.base-table-tr
+  +d-display(block)
+  +d-display-lg(table-row)
+
+.base-table-tbody
+  +d-display(block)
+  +d-display-lg(table-row-group)
+
+.base-table-td
+  +d-display(flex)
+  +d-display-lg(table-cell)
+  +justify-content-between()
+
+  text-align: right
+  +lg(text-align, left)
+
+
+  &::before
+    content: attr(data-label)
+    +lg(content, "")
+
+    font-weight: bold
+    text-align: left
+
+
+// full
+.base-table-th-full, .base-table-td-full
+  border:  1px solid #dee2e6
+  text-align: center
+
+
+// top
+.base-table-td-top
+  +px(0px)
+  +px-lg(10px)
+  +py(8px)
+  &:first-child
+    border-top: 0
+    +lg(border-top,  1px solid #dee2e6)
+  &::before
+    +pr(15px)
+    +pr-lg(0px)

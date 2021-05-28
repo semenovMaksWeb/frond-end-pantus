@@ -1,0 +1,21 @@
+@import "assets/sass-mixin/index"
+.order-city-ul
+  position: absolute
+  top: 100%
+  z-index: 10
+  background: #fff
+  padding: 0
+  margin: 0
+  border: 1px solid #cad3d8
+  max-height: 200px
+  overflow: auto
+  width: 100%
+  max-width: 169px
+.order-city-block
+  position: relative
+.order-city-li
+  cursor: pointer
+  +px(5px)
+  +py(5px)
+  &:hover, &.active
+    background-color: #cad3d8

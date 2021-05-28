@@ -1,0 +1,50 @@
+@import "assets/sass-mixin/index"
+.product-button-buy-img
+  +fz(12px)
+  +d-display(block)
+  +d-display-lg(none)
+  &.active
+    color:  green
+    +d-display(block)
+
+.product-button-buy-text
+  +fz(12px)
+  +d-display(none)
+  +d-display-lg(block)
+  &.active
+    color: #dc3545
+
+.product-button-buy
+  background-color: #dc3545
+  color: #fff
+  border: 0
+  cursor: pointer
+  border-radius: 6px
+  +px(8px)
+  +py(5px)
+  &.active
+    background-color: #fff
+    border: 1px solid green
+    &:hover
+      background-color: green
+  &:hover , &:focus
+    outline-color:  #a0252c
+    background-color: #a0252c
+    .product-button-buy-img
+      color: #fff
+    .product-button-buy-text
+      color: #fff
+.product-button-delete
+  border-radius: 6px
+  border: 1px solid #dc3545
+  color: #dc3545
+  cursor: pointer
+  +px(8px)
+  +py(5px)
+  +fz(13px)
+  &:hover, &:focus
+    color: #fff
+    background-color: #dc3545
+
+
+

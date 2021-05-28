@@ -1,0 +1,31 @@
+@import "assets/sass-mixin/index"
+.header-search-items
+  order: 1
+  +grid-lg(6)
+  +grid(12)
+  +lg(order,0)
+.header-search-input-items
+  height: 35px
+  +d-display(flex)
+  +justify-content-between()
+.header-search-input
+  border: 2px solid #dc3545
+  border-right: 0
+  width: 100%
+  +pl(6px)
+  &:focus
+    outline: 0
+.header-search-button
+  cursor: pointer
+  border: 2px solid #dc3545
+  background-color: #dc3545
+  color: #fff
+  border-radius: 0 3px 3px 0
+  +px(5px)
+  &:hover, &:focus
+    background-color: #a0252c
+    border: 2px solid #a0252c
+    outline: 0
+.header-search-error
+  color: #a0252c
+  width: 100%

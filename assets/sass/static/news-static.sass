@@ -1,0 +1,65 @@
+@import "assets/sass-mixin/index"
+.static
+  &.news-id
+    .btn
+      &.red
+        color: #fff
+        background: #8b0000
+        text-decoration: none
+        padding: 5px
+        margin-bottom: 5px
+        +d-display(inline-block)
+        +fz(12px)
+    .col
+      float: left
+      +col-padding()
+    img
+      +px(10px)
+    .row
+      clear: both
+      +align-items-center()
+      +mb(15px)
+      & *
+        +mb(0)
+    .foto-fancy-img
+       cursor: pointer
+    // col-name
+    .col-12
+      +grid(12)
+    // md
+    .col-md-3
+      +grid-md(3)
+      +grid(12)
+    .col-md-4
+      +grid-md(4)
+      +grid(12)
+    .col-md-5
+      +grid-md(5)
+      +grid(12)
+    .col-md-7
+      +grid-md(7)
+      +grid(12)
+    .col-md-8
+      +grid-md(8)
+      +grid(12)
+    .col-md-12
+      +grid-md(12)
+      +grid(12)
+
+    // sm
+    .col-sm-5
+      +grid-sm(5)
+      +grid(12)
+    // table
+    .basic-table
+      border:  0
+      width: 100%
+      border-collapse: separate
+      text-align: right
+      border-spacing: 0
+      margin-top: 0
+      +fz(14px)
+      & td
+        border-bottom: 1px solid #eee
+        text-align: left
+        +py(10px)

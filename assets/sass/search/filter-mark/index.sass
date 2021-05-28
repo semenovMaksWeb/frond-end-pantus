@@ -1,0 +1,17 @@
+@import "assets/sass-mixin/index"
+.filter-marks-wrapper
+  +mt(10px)
+  +mb(20px)
+.filter-mark
+  position: relative
+  cursor: pointer
+  +col-margin()
+  &:hover
+    text-decoration: line-through
+    color: #dc3545
+.filter-mark-delete
+  +ml(4px)
+  position: absolute
+  top: 0
+  color: #dc3545
+  +fz(10px)

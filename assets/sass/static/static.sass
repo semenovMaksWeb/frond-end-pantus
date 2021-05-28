@@ -1,0 +1,63 @@
+@import "assets/sass-mixin/index"
+.static
+  h1,h2,h3,h4,h5,h6
+    color: #515151
+    font-weight: 600
+    line-height: 1.1
+  h1
+    +fz(30px)
+    +mb(28px)
+  h2
+    +fz(22px)
+    +mb(11px)
+  h3
+    +fz(18px)
+    +mb(15px)
+  h4
+    +fz(13px)
+    font-weight: 700
+  h5
+    +fz(13px)
+  p
+    color: #555
+    +mb(15px)
+    +lh(22px)
+    +fz(12px)
+  ul
+    +mb(15px)
+    +d-display(block)
+    +ml(15px)
+    color: #555
+    li
+      position: relative
+      list-style: none
+      +mb(5px)
+      &::after
+        position: absolute
+        top: 0
+        right: 100%
+        background: #dc3545
+        content: ""
+        width: 5px
+        height: 5px
+        margin-right: 12px
+        margin-top: 8px
+        border-radius: 5px
+        font-weight: 700
+  a
+    color: #436174
+    cursor: pointer
+    transition: color 0.3s linear
+    &:hover, &:focus
+      color: #dc3545
+      text-decoration: none
+
+  td
+    vertical-align: baseline
+  .col-md-6
+      +grid(12)
+      +grid-md(6)
+
+  .flex-column
+    +d-display(flex)
+    +flex-column()

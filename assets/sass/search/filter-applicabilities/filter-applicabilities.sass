@@ -1,0 +1,90 @@
+.filter-applicabilities
+  +mb(15px)
+.filter-applicabilities-form
+  width: 100%
+
+  border: 1px solid #e1e1e1
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2)
+  +py(10px)
+  +px(15px)
+  +d-display(inline-block)
+  &:hover
+    border: 1px solid #ec0e1d
+    .link-hover-main
+      color: #ec0e1d
+
+.filter-applicabilities-form-get
+  +d-display(block)
+
+.filter-applicabilities-title
+  cursor: pointer
+  color: #666
+  font-weight: 700
+  +fz(14px)
+
+.filter-applicabilities-wrapper-panel
+  border: 1px solid #e1e1e1
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2)
+  +pt(25px)
+  +px(15px)
+  +pb(20px)
+
+.filter-applicabilities-panel
+  +row-no-gutters()
+  +align-items-center()
+  +mb(10px)
+
+.filter-appicabilities-wrapper-input
+  position: relative
+  +grid-md(3)
+  +grid(12)
+  +mr(30px)
+
+  +mb(10px)
+  +mb-md(0)
+
+.filter-appicabilities-input
+  min-height: 25px
+  border: 1px solid #ced4da
+  color: #555
+  cursor: pointer
+  +fz(12px)
+
+  +pl(5px)
+  +py(5px)
+
+
+.filter-appicabilities-input__disable
+  opacity: 0.65
+  background-color: #e9ecef
+  cursor: not-allowed
+
+
+.filter-appicabilities-ul
+  position: absolute
+  width: 100%
+  overflow-y: auto
+  max-height: 200px
+  overflow-x: hidden
+  border: 1px solid #666
+  background-color: #fff
+  z-index: 10
+  +pt(10px)
+
+.filter-appicabilities-li
+  list-style: none
+  cursor: pointer
+  +pl(10px)
+  +py(5px)
+  +fz(12px)
+  &:hover
+    background-color: #666
+.filter-appicabilities-li-active
+  background-color: #666
+
+.filter-appicabilities-button__add
+  background-color: #28a745
+  &:hover
+    background-color: #218838
+.filter-applicabilities-buttons
+  +mb(15px)

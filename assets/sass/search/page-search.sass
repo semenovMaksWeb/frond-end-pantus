@@ -1,0 +1,32 @@
+@import "assets/sass-mixin/index"
+.search-row
+  +row()
+  +justify-content-between()
+  +align-items-start()
+.filter-product-col
+  +col(12)
+  +col-lg(3)
+  +col-margin()
+.product-view-blog__filter
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2)
+  border: 1px solid #e1e1e1
+  +col(12)
+  +col-lg(9)
+  +col-margin()
+  +px(20px)
+  +pb(20px)
+.search-query-count
+  +pt(10px)
+.search-pagination
+  +mt(20px)
+  width: 100%
+.search-blog
+  +d-display(flex)
+  +d-display-md(none)
+
+.search-vid-table
+  +d-display(none)
+  +d-display-md(block)
+.search-vid-blog
+  +d-display(none)
+  +d-display-md(flex)

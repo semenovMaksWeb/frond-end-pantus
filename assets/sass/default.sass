@@ -1,0 +1,81 @@
+@import "assets/sass-mixin/index"
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+body
+  color: #555
+  line-height: 1.5
+  font-family: 'Open Sans', sans-serif
+a:focus
+  outline: 0
+.container
+  max-width: 1110px
+  width: 100%
+  padding: 0 30px
+  margin: 0 auto
+
+.h1,.h2,.h3,.h4,.h5,.h6
+  color: #515151
+  font-weight: 600
+  line-height: 1.1
+.h1
+  font-size: 30px
+  +mb(28px)
+.h2
+  font-size: 22px
+  +mb(11px)
+.h3
+  font-size: 18px
+  +mb(15px)
+.row
+  +row()
+.row-gutters
+  +row-no-gutters()
+.link
+  transition: color 0.3s linear
+  color: #436174
+  text-decoration: none
+  cursor: pointer
+  +d-display(block)
+.link-hover-main
+  &:hover, &:focus
+    color: #dc3545
+    text-decoration: none
+.button
+  +py(5px)
+  +px(8px)
+  transition: all 0.3s linear
+  background-color: #dc3545
+  border: 0
+  color: #fff
+  cursor: pointer
+  border-radius: 6px
+  text-decoration: none
+.link-hover-button
+  &:hover,&:focus
+    background-color: #a0252c
+    outline: 1px solid #fff
+.box-shadow
+  box-shadow: 5px 5px 9px 1px #ccc
+.img
+  width: 100%
+  height: auto
+.col
+  +col-padding()
+.text-error
+  color: red
+
+.text
+  color: #555
+  +mb(15px)
+
+.recaptcha
+  +mb(20px)
+.wrapper-full
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+  min-height: 100vh

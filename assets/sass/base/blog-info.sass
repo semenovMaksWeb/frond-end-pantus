@@ -1,0 +1,27 @@
+@import "assets/sass-mixin/index"
+.block-info
+  +col-padding()
+  +py(15px)
+  top: 0
+  left: 0
+  position: fixed
+  width: 100%
+  z-index: 2000
+
+.block-info-row
+  +d-display(flex)
+  +justify-content-between()
+  +align-items-center()
+
+.close-block-info
+  cursor: pointer
+  +pl(15px)
+
+.blog_info-good
+  color: #155724
+  background-color: #d4edda
+  border-color: #c3e6cb
+.blog_info-error
+  color: #721c24
+  background-color: #f8d7da
+  border-color: #f5c6cb

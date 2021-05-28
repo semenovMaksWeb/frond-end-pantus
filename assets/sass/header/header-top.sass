@@ -1,0 +1,29 @@
+@import "assets/sass-mixin/index"
+.header-top
+  +d-display-lg(flex)
+  +d-display(none)
+.header-top-nav
+  position: relative
+.header-top-row
+  +justify-content-between()
+.header-top-link
+  text-decoration: none
+  color: #4a4a4a
+  cursor: pointer
+  +fz(12px)
+  +pr(10px)
+  &:last-child
+    +pr(0px)
+.header-top
+  background-color: #f8f9fa
+  +py(10px)
+.header-top-tlf_link
+  font-weight: 600
+  text-decoration: none
+  color: #436174
+  +fz(12px)
+.header-top-tlf_text
+  +fz(12px)
+  +pl(5px)
+.header-top-dropdown
+  +mt(10px)

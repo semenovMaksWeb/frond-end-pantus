@@ -1,0 +1,32 @@
+@import "assets/sass-mixin/index"
+.cart-active
+  position: relative
+.cart-icons-active
+  color: #ec0e1d
+  border: 2px solid #ec0e1d
+  border-radius: 50%
+  width: 25px
+  height: 25px
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    ~.cart-text-active
+      +d-display(block)
+.cart-text-active
+  +d-display(none)
+  position: absolute
+  bottom: 100%
+  left: -120%
+  z-index: 1000
+
+  width: 180px
+  +mb(5px)
+  +px(5px)
+  +py(10px)
+
+  +fz(12px)
+  text-align: center
+  background-color: #ec0e1d
+  color: #fff
+  border-radius: 4px

@@ -1,0 +1,25 @@
+@import "assets/sass-mixin/index"
+//  profile-nav
+.profile-nav
+  +fz(13px)
+  +mb(20px)
+  +grid(12)
+  +grid-lg(2)
+.profile-nav-data_user
+  color: #4a4a4a
+.profile-nav-item
+  +d-display(flex)
+  +flex-column()
+  +align-items-start()
+  +mt(45px)
+.profile-nav-name_user
+  font-weight: 800
+  +mb(15px)
+.profile-nav-link
+  cursor: pointer
+  text-decoration: underline
+  color: #4a4a4a
+  +mb(5px)
+  &.active, &:hover, &:focus
+    text-decoration: none
+    font-weight: 800

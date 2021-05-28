@@ -1,0 +1,43 @@
+@import "assets/sass-mixin/index"
+.header-bottom
+  border-bottom: 1px solid #cad3d8
+  +pt(10px)
+  +pb(10px)
+  +pb-lg(15px)
+.header-bottom-items
+  position: relative
+  +grid-lg(12)
+  +d-display(none)
+  +d-display-lg(flex)
+
+.header-bottom-link
+  position: relative
+  font-weight: 700
+  text-decoration: none
+  color: #555
+  text-align: center
+  cursor: pointer
+  +d-display(block)
+  +pr(15px)
+  +fz(12px)
+  &:hover
+    color: #ec0e1d
+    &::before
+      content: ""
+      width: 100%
+      height: 2px
+      background-color: #ec0e1d
+      position: absolute
+      bottom: -16px
+      left: -6px
+      +d-display(block)
+
+  &:first-child
+    +pl(0px)
+    +pr(15px)
+    &::before
+      left: -13px
+      width: calc(100% + 13px)
+
+.header-bottom-dropdown
+  +mb(10px)
